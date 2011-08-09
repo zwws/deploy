@@ -1,0 +1,21 @@
+<h1>Welcome#index</h1>
+<p>Find me in app/views/welcome/index.html.erb</p>
+<% 3.times do -%>
+	Ho!<br />
+<% end -%>
+Merry Christmas!<br />
+
+<% 3.downto(1) do |count| -%>
+<%= count -%>... <br />
+<% end -%>
+
+It's now <%= @time -%>
+Time to say <%= link_to 'Goodbye!', :action => 'goodbye' -%>
+
+<% for file in @files -%>
+file name is: <%= file -%><br />
+<% end -%>
+
+<% x = 10; while x >= 0 -%>
+<%= x %>	
+<% x = x - 1; end -%>
