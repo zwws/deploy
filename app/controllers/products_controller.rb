@@ -58,10 +58,6 @@ class ProductsController < ApplicationController
   def update
     @product = Product.find(params[:id])
 
-		puts 'debug111======================='
-		@product.price = 0.02
-		puts @product.price
-
     respond_to do |format|
       if @product.update_attributes(params[:product])
         format.html { redirect_to(@product, :notice => 'Product was successfully updated.') }
